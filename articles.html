@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>All Articles | Charan Teja</title>
+
+    <meta name="description"
+        content="Explore all technology articles written by Charan Teja covering automation, AI, electronics, embedded systems, automotive technology and emerging technologies.">
+
+    <meta name="author" content="Charan Teja">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://charan-exe.github.io/articles.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #11110f;
+            color: #eeeae1;
+            font-family: "DM Sans", sans-serif;
+            line-height: 1.6;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .container {
+            width: min(1050px, 90%);
+            margin: auto;
+        }
+
+
+        /* NAVIGATION */
+
+        nav {
+            border-bottom: 1px solid #292824;
+            background: #11110f;
+        }
+
+        .nav-inner {
+            min-height: 72px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand {
+            font-family: "Playfair Display", serif;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .brand span {
+            color: #c8a96b;
+        }
+
+        .back {
+            color: #aaa69e;
+            font-size: 14px;
+        }
+
+        .back:hover {
+            color: #c8a96b;
+        }
+
+
+        /* HEADER */
+
+        .page-header {
+            padding: 100px 0 70px;
+        }
+
+        .label {
+            color: #c8a96b;
+
+            text-transform: uppercase;
+
+            letter-spacing: 2px;
+
+            font-size: 12px;
+
+            font-weight: 700;
+
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-family: "Playfair Display", serif;
+
+            font-size: clamp(45px, 7vw, 75px);
+
+            line-height: 1.05;
+
+            margin-bottom: 20px;
+        }
+
+        .intro {
+            max-width: 650px;
+
+            color: #96928a;
+
+            font-size: 17px;
+        }
+
+
+        /* ARTICLE LIST */
+
+        .all-articles {
+            padding-bottom: 110px;
+        }
+
+        .article-list {
+            display: grid;
+
+            gap: 18px;
+        }
+
+        .article {
+
+            display: grid;
+
+            grid-template-columns: 190px 1fr;
+
+            gap: 28px;
+
+            padding: 25px;
+
+            background: #191917;
+
+            border: 1px solid #2c2b27;
+
+            transition: 0.2s;
+        }
+
+        .article:hover {
+            border-color: #575145;
+
+            transform: translateY(-2px);
+        }
+
+        .article-image {
+            min-height: 145px;
+
+            background-size: cover;
+
+            background-position: center;
+        }
+
+        .automation {
+            background-image:
+                url("https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=85");
+        }
+
+        .ai {
+            background-image:
+                url("https://images.unsplash.com/photo-1555255707-c07966088b7b?auto=format&fit=crop&w=800&q=85");
+        }
+
+        .electronics {
+            background-image:
+                url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=85");
+        }
+
+        .automotive {
+            background-image:
+                url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=800&q=85");
+        }
+
+        .category {
+            color: #c8a96b;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1.5px;
+
+            font-size: 11px;
+
+            font-weight: 700;
+
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-family: "Playfair Display", serif;
+
+            font-size: 26px;
+
+            line-height: 1.25;
+
+            margin-bottom: 10px;
+        }
+
+        .description {
+            color: #96928a;
+
+            font-size: 14px;
+
+            margin-bottom: 15px;
+        }
+
+        .read {
+            color: #d0b579;
+
+            font-size: 13px;
+
+            font-weight: 700;
+        }
+
+
+        /* MOBILE */
+
+        @media (max-width: 650px) {
+
+            .article {
+                grid-template-columns: 1fr;
+            }
+
+            .article-image {
+                min-height: 190px;
+            }
+
+            .page-header {
+                padding: 75px 0 50px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<nav>
+
+    <div class="container nav-inner">
+
+        <a href="index.html" class="brand">
+            Charan<span>.</span>
+        </a>
+
+        <a href="index.html" class="back">
+            ← Back to Home
+        </a>
+
+    </div>
+
+</nav>
+
+
+<header class="page-header">
+
+    <div class="container">
+
+        <div class="label">
+            Writing
+        </div>
+
+        <h1>
+            All Articles
+        </h1>
+
+        <p class="intro">
+
+            A collection of my writing on automation,
+            artificial intelligence, electronics,
+            embedded systems and emerging technologies.
+
+        </p>
+
+    </div>
+
+</header>
+
+
+<section class="all-articles">
+
+    <div class="container">
+
+        <div class="article-list">
+
+
+            <!-- ==================================================
+                 ADD NEW ARTICLES ABOVE THIS COMMENT
+            =================================================== -->
+
+
+            <!-- ARTICLE 1 -->
+
+            <article class="article">
+
+                <div class="article-image automation"></div>
+
+                <div>
+
+                    <div class="category">
+                        Industrial Automation
+                    </div>
+
+                    <h2>
+                        How to Start a Career in Industrial Automation
+                        in 2026
+                    </h2>
+
+                    <p class="description">
+
+                        A beginner-friendly roadmap for understanding
+                        industrial automation and its career opportunities.
+
+                    </p>
+
+                    <a
+                        href="YOUR-MEDIUM-ARTICLE-LINK"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="read">
+
+                        Read on Medium →
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- ARTICLE 2 -->
+
+            <article class="article">
+
+                <div class="article-image ai"></div>
+
+                <div>
+
+                    <div class="category">
+                        Artificial Intelligence
+                    </div>
+
+                    <h2>
+                        YOUR ARTICLE TITLE
+                    </h2>
+
+                    <p class="description">
+
+                        YOUR ARTICLE DESCRIPTION
+
+                    </p>
+
+                    <a
+                        href="YOUR-MEDIUM-ARTICLE-LINK"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="read">
+
+                        Read on Medium →
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</body>
+
+</html>
