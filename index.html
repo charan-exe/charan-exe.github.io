@@ -523,58 +523,157 @@
 
 
         /* =====================================================
-           TOPICS
-        ===================================================== */
+   EXPLORING SECTION
+===================================================== */
 
-        .topics {
-            padding: 105px 0;
+.exploring {
+    padding: 115px 0;
 
-            background: #ebe8e0;
+    background: #ebe8e0;
 
-            color: #1b1a17;
-        }
+    color: #1b1a17;
+}
 
-        .topics h2 {
-            font-family: "Playfair Display", serif;
+.exploring-inner {
+    display: grid;
 
-            font-size: clamp(38px, 5vw, 55px);
+    grid-template-columns: 0.85fr 1.15fr;
 
-            margin-bottom: 40px;
-        }
+    gap: 80px;
 
-        .topic-grid {
-            display: grid;
+    align-items: start;
+}
 
-            grid-template-columns: repeat(5, 1fr);
+.exploring-label {
+    color: #8b7041;
 
-            border-top: 1px solid #c8c4ba;
+    font-size: 12px;
 
-            border-left: 1px solid #c8c4ba;
-        }
+    text-transform: uppercase;
 
-        .topic {
-            min-height: 145px;
+    letter-spacing: 2px;
 
-            padding: 25px;
+    font-weight: 700;
 
-            display: flex;
+    margin-bottom: 16px;
+}
 
-            align-items: end;
+.exploring-title {
+    font-family: "Playfair Display", serif;
 
-            border-right: 1px solid #c8c4ba;
+    font-size: clamp(40px, 5vw, 58px);
 
-            border-bottom: 1px solid #c8c4ba;
+    line-height: 1.08;
 
-            font-family: "Playfair Display", serif;
+    font-weight: 600;
 
-            font-size: 20px;
+    margin-bottom: 22px;
+}
 
-            transition: 0.2s;
-        }
+.exploring-intro {
+    color: #666159;
 
-        .topic:hover {
-            background: #dedbd2;
-        }
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    max-width: 430px;
+}
+
+.exploring-content {
+    border-top: 1px solid #c8c4ba;
+}
+
+.exploring-item {
+    padding: 25px 0;
+
+    border-bottom: 1px solid #c8c4ba;
+
+    display: grid;
+
+    grid-template-columns: 55px 1fr;
+
+    gap: 20px;
+
+    transition: 0.2s;
+}
+
+.exploring-number {
+    color: #a18858;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 15px;
+
+    padding-top: 4px;
+}
+
+.exploring-item h3 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 25px;
+
+    font-weight: 600;
+
+    margin-bottom: 5px;
+}
+
+.exploring-item p {
+    color: #69655d;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    max-width: 600px;
+}
+
+.exploring-item:hover h3 {
+    color: #8b7041;
+}
+
+
+/* =====================================================
+   EXPLORING CTA
+===================================================== */
+
+.exploring-cta {
+    margin-top: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+.exploring-cta-text {
+    color: #69655d;
+
+    font-size: 13px;
+}
+
+.exploring-link {
+    color: #8b7041;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    border-bottom: 1px solid #b9a06b;
+
+    padding-bottom: 3px;
+
+    transition: 0.2s;
+}
+
+.exploring-link:hover {
+    color: #1b1a17;
+
+    border-color: #1b1a17;
+}
 
 
         /* =====================================================
@@ -750,11 +849,12 @@
             }
 
             .intro-grid,
-            .about-grid {
-                grid-template-columns: 1fr;
+.about-grid,
+.exploring-inner {
+    grid-template-columns: 1fr;
 
-                gap: 35px;
-            }
+    gap: 40px;
+}
 
             .article-grid {
                 grid-template-columns: 1fr;
@@ -1362,42 +1462,167 @@
 
 
 <!-- ==========================================================
-     TOPICS
+     WHAT I'M EXPLORING
 =========================================================== -->
 
-<section class="topics" id="topics">
+<section class="exploring" id="topics">
 
     <div class="container">
 
-        <div class="small-title">
-            Topics
-        </div>
+        <div class="exploring-inner">
 
-        <h2>
-            What I write about.
-        </h2>
+            <!-- LEFT SIDE -->
 
+            <div>
 
-        <div class="topic-grid">
+                <div class="exploring-label">
+                    What I'm Exploring
+                </div>
 
-            <div class="topic">
-                Electronics
+                <h2 class="exploring-title">
+                    Curious about<br>
+                    what's next.
+                </h2>
+
+                <p class="exploring-intro">
+
+                    I write about the technologies I'm learning,
+                    researching and trying to understand — from
+                    the electronics inside everyday devices to
+                    automation, artificial intelligence and
+                    emerging technologies.
+
+                </p>
+
             </div>
 
-            <div class="topic">
-                Automation
-            </div>
 
-            <div class="topic">
-                Artificial Intelligence
-            </div>
+            <!-- RIGHT SIDE -->
 
-            <div class="topic">
-                Embedded Systems
-            </div>
+            <div class="exploring-content">
 
-            <div class="topic">
-                Automotive Technology
+
+                <!-- 01 -->
+
+                <div class="exploring-item">
+
+                    <div class="exploring-number">
+                        01
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Electronics
+                        </h3>
+
+                        <p>
+                            Exploring the hardware, circuits and
+                            technologies behind the electronic
+                            devices we use every day.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- 02 -->
+
+                <div class="exploring-item">
+
+                    <div class="exploring-number">
+                        02
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Industrial Automation
+                        </h3>
+
+                        <p>
+                            Learning about automation, control
+                            systems, smart manufacturing and
+                            Industry 4.0.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- 03 -->
+
+                <div class="exploring-item">
+
+                    <div class="exploring-number">
+                        03
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Artificial Intelligence
+                        </h3>
+
+                        <p>
+                            Exploring AI, deep learning, AI agents
+                            and the ways artificial intelligence
+                            is changing technology.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- 04 -->
+
+                <div class="exploring-item">
+
+                    <div class="exploring-number">
+                        04
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Embedded & Automotive Technology
+                        </h3>
+
+                        <p>
+                            Writing about embedded systems,
+                            automotive software and the technologies
+                            shaping modern vehicles.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CTA -->
+
+                <div class="exploring-cta">
+
+                    <span class="exploring-cta-text">
+                        Follow along as I learn and write.
+                    </span>
+
+                    <a
+                        href="https://medium.com/@charan.content"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="exploring-link">
+
+                        Read my writing →
+
+                    </a>
+
+                </div>
+
+
             </div>
 
         </div>
