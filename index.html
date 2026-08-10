@@ -1,18 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Charan Teja | Automotive Embedded Systems & Industrial Automation</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Charan Teja — Electronics and Communication Engineering student focused on Automotive Embedded Systems, Software-Defined Vehicles, Industrial Automation, Embedded Systems and Industrial IoT.">
+    <title>
+        Charan Teja | Technology Writer
+    </title>
 
-    <meta name="keywords" content="Charan Teja, Automotive Embedded Systems, Industrial Automation, Embedded Systems, Software Defined Vehicles, SDV, Electronics, Industrial IoT">
+    <meta name="description"
+          content="Charan Teja is a technology writer exploring emerging technologies across automation, AI, electronics, embedded systems and automotive technology.">
 
-    <meta name="author" content="Charan Teja">
+    <meta name="keywords"
+          content="Charan Teja, technology writer, automation, artificial intelligence, AI, electronics, embedded systems, automotive technology, emerging technologies">
+
+    <meta name="author"
+          content="Charan Teja">
+
+    <meta name="robots"
+          content="index, follow">
+
+    <meta name="theme-color"
+          content="#11110f">
+
+
+    <!-- Open Graph -->
+
+    <meta property="og:title"
+          content="Charan Teja | Technology Writer">
+
+    <meta property="og:description"
+          content="Writing about emerging technologies, automation, AI and electronics.">
+
+    <meta property="og:type"
+          content="website">
+
+    <meta property="og:url"
+          content="https://charan-exe.github.io/">
+
+
+    <!-- Fonts -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+          rel="stylesheet">
+
 
     <style>
+
+        /* =====================================================
+           GLOBAL
+        ===================================================== */
+
         * {
             margin: 0;
             padding: 0;
@@ -24,813 +73,1323 @@
         }
 
         body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #0b0f14;
-            color: #f4f7fb;
-            line-height: 1.6;
+            background: #11110f;
+            color: #eeeae1;
+            font-family: "DM Sans", sans-serif;
+            line-height: 1.7;
         }
 
         a {
-            color: inherit;
             text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
         }
 
         .container {
-            width: 90%;
-            max-width: 1100px;
+            width: min(1120px, 90%);
             margin: auto;
         }
 
-        /* Navigation */
 
-        nav {
+        /* =====================================================
+           NAVIGATION
+        ===================================================== */
+
+        .navbar {
             position: sticky;
             top: 0;
             z-index: 1000;
-            background: rgba(11, 15, 20, 0.94);
-            border-bottom: 1px solid #202731;
-            backdrop-filter: blur(10px);
+
+            background: rgba(17, 17, 15, 0.94);
+
+            border-bottom: 1px solid #292824;
+
+            backdrop-filter: blur(12px);
         }
 
         .nav-inner {
-            height: 70px;
+            min-height: 72px;
+
             display: flex;
             align-items: center;
             justify-content: space-between;
         }
 
-        .logo {
-            font-size: 22px;
-            font-weight: 700;
-            letter-spacing: -0.5px;
+        .brand {
+            font-family: "Playfair Display", serif;
+
+            font-size: 23px;
+            font-weight: 600;
         }
 
-        .logo span {
-            color: #5ea7ff;
+        .brand span {
+            color: #c8a96b;
         }
 
         .nav-links {
             display: flex;
-            gap: 25px;
+            gap: 27px;
+
             list-style: none;
+
             font-size: 14px;
-            color: #b9c2cf;
+            color: #bdb8ad;
+        }
+
+        .nav-links a {
+            transition: 0.2s;
         }
 
         .nav-links a:hover {
             color: #ffffff;
         }
 
-        /* Hero */
+
+        /* =====================================================
+           HERO
+        ===================================================== */
 
         .hero {
-            min-height: 88vh;
+
+            min-height: 720px;
+
             display: flex;
             align-items: center;
-            padding: 80px 0;
+
+            position: relative;
+
+            overflow: hidden;
+
+            background-image:
+
+                linear-gradient(
+                    90deg,
+                    rgba(17,17,15,0.97) 0%,
+                    rgba(17,17,15,0.86) 43%,
+                    rgba(17,17,15,0.48) 100%
+                ),
+
+                url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1800&q=85");
+
+            background-size: cover;
+            background-position: center;
         }
 
         .hero-content {
-            max-width: 850px;
+            max-width: 760px;
+            padding: 100px 0;
         }
 
         .eyebrow {
+
             display: inline-block;
+
+            margin-bottom: 24px;
+
             padding: 7px 13px;
-            border: 1px solid #26384d;
+
+            border: 1px solid #48443b;
+
             border-radius: 30px;
-            color: #76b5ff;
-            background: #101923;
-            font-size: 13px;
-            margin-bottom: 25px;
+
+            color: #d3b77b;
+
+            font-size: 12px;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1.6px;
         }
 
         .hero h1 {
-            font-size: clamp(45px, 8vw, 82px);
-            line-height: 1.02;
+
+            font-family: "Playfair Display", serif;
+
+            font-size: clamp(50px, 8vw, 88px);
+
+            line-height: 1.03;
+
+            font-weight: 600;
+
             letter-spacing: -3px;
+
             margin-bottom: 25px;
         }
 
         .hero h1 span {
-            color: #5ea7ff;
+            color: #c8a96b;
         }
 
-        .hero p {
-            max-width: 720px;
-            font-size: 19px;
-            color: #aeb8c5;
+        .hero-subtitle {
+
+            font-size: clamp(20px, 3vw, 28px);
+
+            color: #d4d0c7;
+
+            margin-bottom: 22px;
+
+            font-weight: 500;
+        }
+
+        .hero-description {
+
+            max-width: 650px;
+
+            color: #aaa69e;
+
+            font-size: 17px;
+
             margin-bottom: 35px;
         }
 
-        .buttons {
+        .hero-buttons {
+
             display: flex;
+
             flex-wrap: wrap;
+
             gap: 12px;
         }
 
         .button {
+
+            display: inline-block;
+
             padding: 12px 20px;
-            border-radius: 8px;
-            border: 1px solid #303b48;
-            font-size: 14px;
+
+            border: 1px solid #47443d;
+
+            border-radius: 5px;
+
+            font-size: 13px;
+
             font-weight: 600;
-            transition: 0.2s;
+
+            transition: 0.25s;
         }
 
-        .button.primary {
-            background: #5ea7ff;
-            color: #07101b;
-            border-color: #5ea7ff;
+        .button-primary {
+
+            background: #c8a96b;
+
+            color: #171510;
+
+            border-color: #c8a96b;
         }
 
         .button:hover {
+
             transform: translateY(-2px);
-            border-color: #5ea7ff;
+
+            border-color: #c8a96b;
         }
 
-        /* Sections */
 
-        section {
-            padding: 90px 0;
-            border-top: 1px solid #1d252e;
+        /* =====================================================
+           INTRO
+        ===================================================== */
+
+        .intro {
+
+            padding: 110px 0;
+
+            background: #f1eee7;
+
+            color: #1b1a17;
         }
 
-        .section-label {
-            color: #5ea7ff;
-            font-size: 13px;
-            font-weight: 700;
+        .intro-grid {
+
+            display: grid;
+
+            grid-template-columns: 0.8fr 1.2fr;
+
+            gap: 80px;
+
+            align-items: start;
+        }
+
+        .small-title {
+
+            color: #8b7041;
+
+            font-size: 12px;
+
             text-transform: uppercase;
-            letter-spacing: 1.5px;
-            margin-bottom: 10px;
+
+            letter-spacing: 2px;
+
+            font-weight: 700;
         }
 
-        h2 {
-            font-size: clamp(30px, 5vw, 48px);
-            letter-spacing: -1.5px;
+        .intro h2 {
+
+            font-family: "Playfair Display", serif;
+
+            font-size: clamp(35px, 5vw, 55px);
+
+            line-height: 1.15;
+
+            font-weight: 600;
+        }
+
+        .intro-text {
+
+            font-size: 18px;
+
+            color: #5c5952;
+        }
+
+        .intro-text p + p {
+
+            margin-top: 18px;
+        }
+
+
+        /* =====================================================
+           ARTICLES
+        ===================================================== */
+
+        .articles {
+
+            padding: 110px 0;
+
+            background: #11110f;
+        }
+
+        .section-header {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: end;
+
+            gap: 30px;
+
+            margin-bottom: 50px;
+        }
+
+        .section-header h2 {
+
+            font-family: "Playfair Display", serif;
+
+            font-size: clamp(38px, 5vw, 58px);
+
+            line-height: 1.1;
+        }
+
+        .section-description {
+
+            max-width: 430px;
+
+            color: #949087;
+
+            font-size: 14px;
+        }
+
+        .article-grid {
+
+            display: grid;
+
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 26px;
+        }
+
+        .article-card {
+
+            overflow: hidden;
+
+            background: #191917;
+
+            border: 1px solid #2c2b27;
+
+            transition: 0.25s;
+        }
+
+        .article-card:hover {
+
+            transform: translateY(-5px);
+
+            border-color: #5c5547;
+        }
+
+        .article-image {
+
+            height: 230px;
+
+            background-size: cover;
+
+            background-position: center;
+        }
+
+        .image-automation {
+
+            background-image:
+                linear-gradient(
+                    rgba(0,0,0,0.18),
+                    rgba(0,0,0,0.18)
+                ),
+                url("https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80");
+        }
+
+        .image-embedded {
+
+            background-image:
+                linear-gradient(
+                    rgba(0,0,0,0.15),
+                    rgba(0,0,0,0.15)
+                ),
+                url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80");
+        }
+
+        .image-ai {
+
+            background-image:
+                linear-gradient(
+                    rgba(0,0,0,0.18),
+                    rgba(0,0,0,0.18)
+                ),
+                url("https://images.unsplash.com/photo-1555255707-c07966088b7b?auto=format&fit=crop&w=1200&q=80");
+        }
+
+        .image-automotive {
+
+            background-image:
+                linear-gradient(
+                    rgba(0,0,0,0.18),
+                    rgba(0,0,0,0.18)
+                ),
+                url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1200&q=80");
+        }
+
+        .article-content {
+
+            padding: 27px;
+        }
+
+        .article-category {
+
+            color: #c8a96b;
+
+            font-size: 11px;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1.5px;
+
+            font-weight: 700;
+
+            margin-bottom: 12px;
+        }
+
+        .article-card h3 {
+
+            font-family: "Playfair Display", serif;
+
+            font-size: 25px;
+
+            line-height: 1.25;
+
+            margin-bottom: 12px;
+        }
+
+        .article-card p {
+
+            color: #97938a;
+
+            font-size: 14px;
+
             margin-bottom: 20px;
         }
 
-        .section-intro {
-            color: #9da8b5;
-            max-width: 700px;
-            margin-bottom: 45px;
+        .read-link {
+
+            color: #d0b579;
+
+            font-size: 13px;
+
+            font-weight: 700;
         }
 
-        /* Focus Areas */
 
-        .focus-grid {
+        /* =====================================================
+           TOPICS
+        ===================================================== */
+
+        .topics {
+
+            padding: 105px 0;
+
+            background: #ebe8e0;
+
+            color: #1b1a17;
+        }
+
+        .topics h2 {
+
+            font-family: "Playfair Display", serif;
+
+            font-size: clamp(38px, 5vw, 55px);
+
+            margin-bottom: 40px;
+        }
+
+        .topic-grid {
+
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 16px;
+
+            grid-template-columns: repeat(5, 1fr);
+
+            border-top: 1px solid #c8c4ba;
+
+            border-left: 1px solid #c8c4ba;
         }
 
-        .focus-card {
-            padding: 28px;
-            border: 1px solid #252e38;
-            border-radius: 12px;
-            background: #10151c;
-        }
+        .topic {
 
-        .focus-card h3 {
-            margin-bottom: 8px;
+            min-height: 145px;
+
+            padding: 25px;
+
+            display: flex;
+
+            align-items: end;
+
+            border-right: 1px solid #c8c4ba;
+
+            border-bottom: 1px solid #c8c4ba;
+
+            font-family: "Playfair Display", serif;
+
             font-size: 20px;
+
+            transition: 0.2s;
         }
 
-        .focus-card p {
-            color: #929eac;
-            font-size: 14px;
+        .topic:hover {
+
+            background: #dedbd2;
+
         }
 
-        /* Projects */
 
-        .project-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 18px;
+        /* =====================================================
+           WRITING PHILOSOPHY
+        ===================================================== */
+
+        .philosophy {
+
+            padding: 120px 0;
+
+            background: #11110f;
         }
 
-        .project-card {
-            padding: 30px;
-            border: 1px solid #252e38;
-            border-radius: 12px;
-            background: #10151c;
+        .philosophy-inner {
+
+            max-width: 850px;
+
+            margin: auto;
+
+            text-align: center;
         }
 
-        .project-number {
-            color: #5ea7ff;
-            font-size: 13px;
-            margin-bottom: 15px;
-        }
+        .quote-mark {
 
-        .project-card h3 {
-            margin-bottom: 10px;
-        }
+            color: #c8a96b;
 
-        .project-card p {
-            color: #929eac;
-            font-size: 14px;
-            margin-bottom: 18px;
-        }
+            font-family: Georgia, serif;
 
-        .project-link {
-            color: #76b5ff;
-            font-size: 14px;
-            font-weight: 600;
-        }
+            font-size: 70px;
 
-        /* Skills */
+            line-height: 0.5;
 
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .skill {
-            padding: 9px 14px;
-            border: 1px solid #2b3540;
-            border-radius: 6px;
-            background: #10151c;
-            color: #c7d0da;
-            font-size: 13px;
-        }
-
-        /* Articles */
-
-        .article-list {
-            display: grid;
-            gap: 14px;
-        }
-
-        .article {
-            display: flex;
-            justify-content: space-between;
-            gap: 20px;
-            padding: 22px;
-            border: 1px solid #252e38;
-            border-radius: 10px;
-            background: #10151c;
-        }
-
-        .article h3 {
-            font-size: 17px;
-            margin-bottom: 5px;
-        }
-
-        .article p {
-            color: #8f9aa8;
-            font-size: 13px;
-        }
-
-        .article a {
-            color: #76b5ff;
-            white-space: nowrap;
-            font-size: 13px;
-            font-weight: 600;
-        }
-
-        /* Contact */
-
-        .contact-box {
-            padding: 45px;
-            border: 1px solid #293440;
-            border-radius: 14px;
-            background: #10151c;
-        }
-
-        .contact-box p {
-            color: #9da8b5;
-            max-width: 650px;
             margin-bottom: 25px;
         }
 
-        /* Footer */
+        .philosophy blockquote {
 
-        footer {
-            padding: 35px 0;
-            border-top: 1px solid #1d252e;
-            color: #778391;
+            font-family: "Playfair Display", serif;
+
+            font-size: clamp(30px, 5vw, 52px);
+
+            line-height: 1.25;
+
+            color: #e9e5dc;
+        }
+
+        .philosophy-caption {
+
+            margin-top: 25px;
+
+            color: #858078;
+
             font-size: 13px;
         }
 
-        .footer-inner {
+
+        /* =====================================================
+           ABOUT
+        ===================================================== */
+
+        .about {
+
+            padding: 110px 0;
+
+            background: #f1eee7;
+
+            color: #1b1a17;
+        }
+
+        .about-grid {
+
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 80px;
+        }
+
+        .about h2 {
+
+            font-family: "Playfair Display", serif;
+
+            font-size: clamp(38px, 5vw, 55px);
+
+            line-height: 1.15;
+        }
+
+        .about-text {
+
+            color: #5d5952;
+
+            font-size: 16px;
+        }
+
+        .about-text p + p {
+
+            margin-top: 20px;
+        }
+
+
+        /* =====================================================
+           CONTACT
+        ===================================================== */
+
+        .contact {
+
+            padding: 110px 0;
+
+            background: #181815;
+
+            text-align: center;
+        }
+
+        .contact h2 {
+
+            font-family: "Playfair Display", serif;
+
+            font-size: clamp(40px, 6vw, 65px);
+
+            margin-bottom: 18px;
+        }
+
+        .contact p {
+
+            color: #929087;
+
+            max-width: 600px;
+
+            margin: auto auto 30px;
+        }
+
+        .contact-links {
+
             display: flex;
+
+            justify-content: center;
+
+            flex-wrap: wrap;
+
+            gap: 12px;
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
+
+        footer {
+
+            padding: 30px 0;
+
+            background: #0c0c0b;
+
+            color: #77736b;
+
+            font-size: 12px;
+        }
+
+        .footer-inner {
+
+            display: flex;
+
             justify-content: space-between;
+
             gap: 20px;
         }
 
-        /* Mobile */
 
-        @media (max-width: 700px) {
+        /* =====================================================
+           MOBILE
+        ===================================================== */
+
+        @media (max-width: 800px) {
 
             .nav-links {
                 display: none;
             }
 
             .hero {
-                min-height: auto;
-                padding: 90px 0;
+                min-height: 650px;
+            }
+
+            .hero-content {
+                padding: 80px 0;
             }
 
             .hero h1 {
                 letter-spacing: -2px;
             }
 
-            .hero p {
-                font-size: 17px;
+            .intro-grid,
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 35px;
             }
 
-            .focus-grid,
-            .project-grid {
+            .article-grid {
                 grid-template-columns: 1fr;
             }
 
-            .article {
-                flex-direction: column;
+            .topic-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
 
-            .contact-box {
-                padding: 28px;
+            .section-header {
+                display: block;
+            }
+
+            .section-description {
+                margin-top: 15px;
             }
 
             .footer-inner {
                 flex-direction: column;
             }
         }
+
+
+        @media (max-width: 500px) {
+
+            .container {
+                width: 88%;
+            }
+
+            .hero h1 {
+                font-size: 52px;
+            }
+
+            .hero-subtitle {
+                font-size: 21px;
+            }
+
+            .hero-description {
+                font-size: 16px;
+            }
+
+            .article-image {
+                height: 205px;
+            }
+
+            .topic-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .topic {
+                min-height: 110px;
+            }
+        }
+
     </style>
+
 </head>
+
 
 <body>
 
-    <!-- Navigation -->
 
-    <nav>
-        <div class="container nav-inner">
+<!-- ==========================================================
+     NAVIGATION
+=========================================================== -->
 
-            <div class="logo">
-                Charan<span>.</span>
+<nav class="navbar">
+
+    <div class="container nav-inner">
+
+        <a href="#" class="brand">
+            Charan<span>.</span>
+        </a>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="#articles">
+                    Articles
+                </a>
+            </li>
+
+            <li>
+                <a href="#topics">
+                    Topics
+                </a>
+            </li>
+
+            <li>
+                <a href="#about">
+                    About
+                </a>
+            </li>
+
+            <li>
+                <a href="#contact">
+                    Contact
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</nav>
+
+
+
+<!-- ==========================================================
+     HERO
+=========================================================== -->
+
+<header class="hero">
+
+    <div class="container">
+
+        <div class="hero-content">
+
+            <div class="eyebrow">
+                Technology Writing
             </div>
 
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#focus">Focus</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#articles">Articles</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <h1>
+                Charan<br>
+                <span>Teja.</span>
+            </h1>
 
-        </div>
-    </nav>
+            <div class="hero-subtitle">
+                Technology Writer | Emerging Technologies
+                (Automation, AI & Electronics)
+            </div>
 
+            <p class="hero-description">
 
-    <!-- Hero -->
+                I write about the technologies I'm learning,
+                exploring and trying to understand — from
+                electronics and automation to artificial
+                intelligence and emerging technologies.
 
-    <header class="hero">
+            </p>
 
-        <div class="container">
+            <div class="hero-buttons">
 
-            <div class="hero-content">
+                <a
+                    href="#articles"
+                    class="button button-primary">
+                    Explore My Writing
+                </a>
 
-                <div class="eyebrow">
-                    Electronics & Embedded Systems
-                </div>
+                <a
+                    href="https://medium.com/@charan.content"
+                    target="_blank"
+                    class="button">
+                    Medium
+                </a>
 
-                <h1>
-                    Building toward the future of
-                    <span>intelligent engineering.</span>
-                </h1>
-
-                <p>
-                    I'm Charan Teja, an Electronics and Communication Engineering
-                    student focused on Automotive Embedded Systems, Software-Defined
-                    Vehicles, Industrial Automation, Embedded Systems and Industrial IoT.
-                </p>
-
-                <div class="buttons">
-
-                    <a class="button primary" href="#projects">
-                        View Projects
-                    </a>
-
-                    <a class="button" href="#articles">
-                        Read Articles
-                    </a>
-
-                    <a class="button" href="https://github.com/charan-exe" target="_blank">
-                        GitHub
-                    </a>
-
-                    <a class="button" href="https://www.linkedin.com/" target="_blank">
-                        LinkedIn
-                    </a>
-
-                </div>
+                <a
+                    href="https://www.linkedin.com/in/charan-writes"
+                    target="_blank"
+                    class="button">
+                    LinkedIn
+                </a>
 
             </div>
 
         </div>
 
-    </header>
+    </div>
+
+</header>
 
 
-    <!-- About -->
 
-    <section id="about">
+<!-- ==========================================================
+     INTRO
+=========================================================== -->
 
-        <div class="container">
+<section class="intro">
 
-            <div class="section-label">
-                About
+    <div class="container intro-grid">
+
+        <div>
+
+            <div class="small-title">
+                The idea
             </div>
 
             <h2>
-                Engineering with a practical mindset.
+                Learning technology by writing about it.
             </h2>
 
-            <p class="section-intro">
-                My interests sit at the intersection of electronics, embedded
-                software and industrial technology. I am particularly interested
-                in how software, connected systems and automation are transforming
-                vehicles and modern manufacturing.
+        </div>
+
+        <div class="intro-text">
+
+            <p>
+                Technology changes quickly. Instead of simply
+                reading about new technologies and moving on,
+                I like to understand them, research them and
+                explain what I learn through writing.
+            </p>
+
+            <p>
+                This website is a collection of those ideas,
+                explanations, discoveries and observations
+                across electronics, automation, AI and other
+                emerging technologies.
             </p>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
-    <!-- Focus Areas -->
 
-    <section id="focus">
+<!-- ==========================================================
+     ARTICLES
+=========================================================== -->
 
-        <div class="container">
+<section class="articles" id="articles">
 
-            <div class="section-label">
-                Focus Areas
-            </div>
+    <div class="container">
 
-            <h2>
-                What I'm building toward.
-            </h2>
+        <div class="section-header">
 
-            <p class="section-intro">
-                Areas I am actively learning, building projects in and researching.
-            </p>
+            <div>
 
-            <div class="focus-grid">
-
-                <div class="focus-card">
-                    <h3>Automotive Embedded Systems</h3>
-                    <p>
-                        Embedded software, automotive ECUs, CAN communication,
-                        real-time systems and vehicle electronics.
-                    </p>
+                <div class="small-title">
+                    Selected Writing
                 </div>
-
-                <div class="focus-card">
-                    <h3>Software-Defined Vehicles</h3>
-                    <p>
-                        Automotive software architectures, vehicle computing,
-                        connected vehicles and next-generation SDV technologies.
-                    </p>
-                </div>
-
-                <div class="focus-card">
-                    <h3>Industrial Automation</h3>
-                    <p>
-                        PLC (Programmable Logic Controller), SCADA
-                        (Supervisory Control And Data Acquisition), control systems
-                        and industrial automation.
-                    </p>
-                </div>
-
-                <div class="focus-card">
-                    <h3>Industrial IoT</h3>
-                    <p>
-                        Connected industrial systems, sensors, telemetry,
-                        edge computing and smart manufacturing.
-                    </p>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- Projects -->
-
-    <section id="projects">
-
-        <div class="container">
-
-            <div class="section-label">
-                Projects
-            </div>
-
-            <h2>
-                Things I'm building.
-            </h2>
-
-            <p class="section-intro">
-                Engineering projects focused on embedded systems, automotive
-                electronics and industrial technology.
-            </p>
-
-            <div class="project-grid">
-
-                <div class="project-card">
-
-                    <div class="project-number">
-                        PROJECT 01
-                    </div>
-
-                    <h3>
-                        Automotive Body Control Module
-                    </h3>
-
-                    <p>
-                        Prototype automotive Body Control Module (BCM) using
-                        STM32 with CAN-based vehicle communication.
-                    </p>
-
-                    <a class="project-link"
-                       href="https://github.com/charan-exe"
-                       target="_blank">
-                        View on GitHub →
-                    </a>
-
-                </div>
-
-
-                <div class="project-card">
-
-                    <div class="project-number">
-                        PROJECT 02
-                    </div>
-
-                    <h3>
-                        Embedded Systems Projects
-                    </h3>
-
-                    <p>
-                        Practical embedded projects involving microcontrollers,
-                        sensors, communication protocols and firmware.
-                    </p>
-
-                    <a class="project-link"
-                       href="https://github.com/charan-exe"
-                       target="_blank">
-                        View Projects →
-                    </a>
-
-                </div>
-
-
-                <div class="project-card">
-
-                    <div class="project-number">
-                        PROJECT 03
-                    </div>
-
-                    <h3>
-                        Industrial Automation Projects
-                    </h3>
-
-                    <p>
-                        Projects exploring PLC, SCADA, industrial communication,
-                        monitoring and automation concepts.
-                    </p>
-
-                    <a class="project-link"
-                       href="https://github.com/charan-exe"
-                       target="_blank">
-                        View GitHub →
-                    </a>
-
-                </div>
-
-
-                <div class="project-card">
-
-                    <div class="project-number">
-                        PROJECT 04
-                    </div>
-
-                    <h3>
-                        Industrial IoT
-                    </h3>
-
-                    <p>
-                        Connected systems combining sensors, microcontrollers,
-                        telemetry and IoT technologies.
-                    </p>
-
-                    <a class="project-link"
-                       href="https://github.com/charan-exe"
-                       target="_blank">
-                        View GitHub →
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- Skills -->
-
-    <section id="skills">
-
-        <div class="container">
-
-            <div class="section-label">
-                Skills
-            </div>
-
-            <h2>
-                Technologies I'm learning.
-            </h2>
-
-            <div class="skills">
-
-                <span class="skill">Embedded C</span>
-                <span class="skill">C/C++</span>
-                <span class="skill">STM32</span>
-                <span class="skill">ESP32</span>
-                <span class="skill">CAN</span>
-                <span class="skill">Microcontrollers</span>
-                <span class="skill">PLC</span>
-                <span class="skill">SCADA</span>
-                <span class="skill">Industrial IoT</span>
-                <span class="skill">Embedded Systems</span>
-                <span class="skill">Automotive Electronics</span>
-                <span class="skill">Git & GitHub</span>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- Articles -->
-
-    <section id="articles">
-
-        <div class="container">
-
-            <div class="section-label">
-                Articles
-            </div>
-
-            <h2>
-                What I'm learning and writing about.
-            </h2>
-
-            <p class="section-intro">
-                I write about embedded systems, automotive technology,
-                industrial automation and emerging engineering technologies.
-            </p>
-
-            <div class="article-list">
-
-                <div class="article">
-
-                    <div>
-                        <h3>
-                            How to Start a Career in Industrial Automation
-                            in 2026 (Complete Beginner Roadmap)
-                        </h3>
-
-                        <p>
-                            A beginner-friendly roadmap for entering industrial automation.
-                        </p>
-                    </div>
-
-                    <a href="https://medium.com/" target="_blank">
-                        Read on Medium →
-                    </a>
-
-                </div>
-
-
-                <div class="article">
-
-                    <div>
-                        <h3>
-                            AI + Embedded Systems: The Future of Smart Electronics and IoT
-                        </h3>
-
-                        <p>
-                            Exploring the convergence of artificial intelligence,
-                            embedded systems and connected electronics.
-                        </p>
-                    </div>
-
-                    <a href="https://medium.com/" target="_blank">
-                        Read on Medium →
-                    </a>
-
-                </div>
-
-
-                <div class="article">
-
-                    <div>
-                        <h3>
-                            More Engineering Articles Coming Soon
-                        </h3>
-
-                        <p>
-                            Automotive software, SDV, industrial AI,
-                            embedded systems and smart manufacturing.
-                        </p>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- Contact -->
-
-    <section id="contact">
-
-        <div class="container">
-
-            <div class="section-label">
-                Contact
-            </div>
-
-            <div class="contact-box">
 
                 <h2>
-                    Let's connect.
+                    Latest Articles
                 </h2>
 
-                <p>
-                    I'm interested in automotive embedded systems,
-                    industrial automation, embedded technology and
-                    engineering opportunities.
-                </p>
+            </div>
 
-                <div class="buttons">
+            <p class="section-description">
 
-                    <a class="button primary"
-                       href="https://github.com/charan-exe"
-                       target="_blank">
-                        GitHub
-                    </a>
+                Practical explanations, career guides and
+                technology insights based on what I'm
+                learning and researching.
 
-                    <a class="button"
-                       href="https://www.linkedin.com/"
-                       target="_blank">
-                        LinkedIn
-                    </a>
+            </p>
 
-                    <a class="button"
-                       href="https://medium.com/"
-                       target="_blank">
-                        Medium
+        </div>
+
+
+
+        <div class="article-grid">
+
+
+            <!-- ARTICLE 1 -->
+
+            <article class="article-card">
+
+                <div class="article-image image-automation"></div>
+
+                <div class="article-content">
+
+                    <div class="article-category">
+                        Industrial Automation
+                    </div>
+
+                    <h3>
+                        How to Start a Career in Industrial
+                        Automation in 2026
+                    </h3>
+
+                    <p>
+                        A beginner-friendly roadmap for
+                        understanding industrial automation,
+                        the skills involved and where to begin.
+                    </p>
+
+                    <a
+                        href="https://medium.com/@charan.content"
+                        target="_blank"
+                        class="read-link">
+                        Read on Medium →
                     </a>
 
                 </div>
 
+            </article>
+
+
+
+            <!-- ARTICLE 2 -->
+
+            <article class="article-card">
+
+                <div class="article-image image-embedded"></div>
+
+                <div class="article-content">
+
+                    <div class="article-category">
+                        Electronics
+                    </div>
+
+                    <h3>
+                        AI + Embedded Systems: The Future
+                        of Smart Electronics and IoT
+                    </h3>
+
+                    <p>
+                        Exploring how artificial intelligence,
+                        embedded systems and connected devices
+                        are coming together.
+                    </p>
+
+                    <a
+                        href="https://medium.com/@charan.content"
+                        target="_blank"
+                        class="read-link">
+                        Read on Medium →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ARTICLE 3 -->
+
+            <article class="article-card">
+
+                <div class="article-image image-ai"></div>
+
+                <div class="article-content">
+
+                    <div class="article-category">
+                        Emerging Technology
+                    </div>
+
+                    <h3>
+                        More Technology Writing
+                    </h3>
+
+                    <p>
+                        Articles exploring AI, automation,
+                        electronics and technologies shaping
+                        the next generation of engineering.
+                    </p>
+
+                    <a
+                        href="https://medium.com/@charan.content"
+                        target="_blank"
+                        class="read-link">
+                        View Medium →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ARTICLE 4 -->
+
+            <article class="article-card">
+
+                <div class="article-image image-automotive"></div>
+
+                <div class="article-content">
+
+                    <div class="article-category">
+                        Automotive Technology
+                    </div>
+
+                    <h3>
+                        Exploring the Future of Automotive
+                        Software and Embedded Technology
+                    </h3>
+
+                    <p>
+                        Notes and articles about automotive
+                        electronics, embedded software and
+                        emerging vehicle technologies.
+                    </p>
+
+                    <a
+                        href="https://medium.com/@charan.content"
+                        target="_blank"
+                        class="read-link">
+                        View Medium →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================================
+     TOPICS
+=========================================================== -->
+
+<section class="topics" id="topics">
+
+    <div class="container">
+
+        <div class="small-title">
+            Topics
+        </div>
+
+        <h2>
+            What I write about.
+        </h2>
+
+
+        <div class="topic-grid">
+
+            <div class="topic">
+                Electronics
+            </div>
+
+            <div class="topic">
+                Automation
+            </div>
+
+            <div class="topic">
+                Artificial Intelligence
+            </div>
+
+            <div class="topic">
+                Embedded Systems
+            </div>
+
+            <div class="topic">
+                Automotive Technology
             </div>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
-    <!-- Footer -->
 
-    <footer>
+<!-- ==========================================================
+     WRITING PHILOSOPHY
+=========================================================== -->
 
-        <div class="container footer-inner">
+<section class="philosophy">
 
-            <div>
-                © 2026 Charan Teja
+    <div class="container">
+
+        <div class="philosophy-inner">
+
+            <div class="quote-mark">
+                “
             </div>
 
-            <div>
-                Automotive Embedded Systems · Industrial Automation · Electronics
+            <blockquote>
+
+                The best way to understand a technology
+                is to try to explain it clearly.
+
+            </blockquote>
+
+            <div class="philosophy-caption">
+
+                My approach to technology writing
+
             </div>
 
         </div>
 
-    </footer>
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================================
+     ABOUT
+=========================================================== -->
+
+<section class="about" id="about">
+
+    <div class="container about-grid">
+
+        <div>
+
+            <div class="small-title">
+                About the Writer
+            </div>
+
+            <h2>
+                Curious about how technology works.
+            </h2>
+
+        </div>
+
+
+        <div class="about-text">
+
+            <p>
+
+                I'm Charan Teja, a technology writer interested
+                in understanding how modern technologies work
+                and how they are changing the world around us.
+
+            </p>
+
+            <p>
+
+                My writing covers electronics, embedded systems,
+                industrial automation, artificial intelligence,
+                automotive technology and other emerging areas.
+
+            </p>
+
+            <p>
+
+                I don't write to present myself as an expert
+                in everything I cover. I write to learn, research,
+                understand and share useful explanations with
+                students, beginners and technology enthusiasts.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================================
+     CONTACT
+=========================================================== -->
+
+<section class="contact" id="contact">
+
+    <div class="container">
+
+        <div class="small-title">
+            Connect
+        </div>
+
+        <h2>
+            Let's talk technology.
+        </h2>
+
+        <p>
+
+            Interested in technology, writing or emerging
+            technologies? You can find me on Medium and
+            LinkedIn or reach me by email.
+
+        </p>
+
+
+        <div class="contact-links">
+
+            <a
+                href="https://medium.com/@charan.content"
+                target="_blank"
+                class="button button-primary">
+                Medium
+            </a>
+
+            <a
+                href="https://www.linkedin.com/in/charan-writes"
+                target="_blank"
+                class="button">
+                LinkedIn
+            </a>
+
+            <a
+                href="mailto:charan.content@gmail.com"
+                class="button">
+                Email Me
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================================
+     FOOTER
+=========================================================== -->
+
+<footer>
+
+    <div class="container footer-inner">
+
+        <div>
+            © 2026 Charan Teja
+        </div>
+
+        <div>
+            Technology Writer · Automation · AI · Electronics
+        </div>
+
+    </div>
+
+</footer>
+
 
 </body>
-                      </html>
+
+</html>
