@@ -5,88 +5,35 @@
 
     <meta charset="UTF-8">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-    <title>
-        All Articles | Charan Teja — Technology Writer
-    </title>
+    <title>Articles | Charan Teja</title>
 
-    <meta
-        name="description"
-        content="Explore technology articles by Charan Teja covering electronics, industrial automation, artificial intelligence, embedded systems and emerging technologies."
-    >
+    <meta name="description"
+          content="Technology articles by Charan Teja covering automation, AI, electronics, embedded systems, automotive technology and emerging technologies.">
 
-    <meta
-        name="keywords"
-        content="Charan Teja, technology writer, electronics articles, industrial automation, AI articles, embedded systems, technology blog"
-    >
+    <meta name="author"
+          content="Charan Teja">
 
-    <meta
-        name="author"
-        content="Charan Teja"
-    >
-
-    <meta
-        name="robots"
-        content="index, follow"
-    >
-
-    <link
-        rel="canonical"
-        href="https://charan-exe.github.io/articles.html"
-    >
-
-
-    <!-- Open Graph -->
-
-    <meta
-        property="og:title"
-        content="All Articles | Charan Teja"
-    >
-
-    <meta
-        property="og:description"
-        content="Technology writing about electronics, automation, artificial intelligence and emerging technologies."
-    >
-
-    <meta
-        property="og:type"
-        content="website"
-    >
-
-    <meta
-        property="og:url"
-        content="https://charan-exe.github.io/articles.html"
-    >
+    <meta name="robots"
+          content="index, follow">
 
 
     <!-- Fonts -->
 
-    <link
-        rel="preconnect"
-        href="https://fonts.googleapis.com"
-    >
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
 
-    <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin
-    >
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
-        rel="stylesheet"
-    >
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+          rel="stylesheet">
 
 
     <style>
-
-        /* =====================================================
-           RESET
-        ===================================================== */
 
         * {
             margin: 0;
@@ -99,6 +46,7 @@
         }
 
         body {
+
             background: #11110f;
 
             color: #eeeae1;
@@ -109,34 +57,29 @@
         }
 
         a {
-            color: inherit;
-
             text-decoration: none;
-        }
-
-        img {
-            max-width: 100%;
+            color: inherit;
         }
 
         .container {
+
             width: min(1120px, 90%);
 
             margin: auto;
         }
 
 
-        /* =====================================================
-           NAVIGATION
-        ===================================================== */
+        /* NAVIGATION */
 
         .navbar {
+
             position: sticky;
 
             top: 0;
 
             z-index: 1000;
 
-            background: rgba(17, 17, 15, 0.95);
+            background: rgba(17,17,15,0.94);
 
             border-bottom: 1px solid #292824;
 
@@ -144,6 +87,7 @@
         }
 
         .nav-inner {
+
             min-height: 72px;
 
             display: flex;
@@ -154,184 +98,192 @@
         }
 
         .brand {
+
             font-family: "Playfair Display", serif;
 
-            font-size: 25px;
+            font-size: 23px;
 
             font-weight: 600;
         }
 
         .brand span {
-            color: #c7a96b;
+            color: #c8a96b;
         }
 
-        .back-link {
-            color: #99958c;
+        .nav-links {
 
-            font-size: 13px;
+            display: flex;
 
-            transition: 0.2s;
+            gap: 27px;
+
+            list-style: none;
+
+            font-size: 14px;
+
+            color: #bdb8ad;
         }
 
-        .back-link:hover {
+        .nav-links a:hover {
             color: #ffffff;
         }
 
 
-        /* =====================================================
-           PAGE HEADER
-        ===================================================== */
+        /* PAGE HEADER */
 
         .page-header {
-            padding: 105px 0 75px;
 
-            border-bottom: 1px solid #292824;
+            padding: 120px 0 80px;
+
+            background: #11110f;
         }
 
-        .eyebrow {
-            color: #c7a96b;
+        .small-title {
 
-            font-size: 11px;
+            color: #8b7041;
 
-            font-weight: 700;
+            font-size: 12px;
 
             text-transform: uppercase;
 
             letter-spacing: 2px;
 
-            margin-bottom: 18px;
+            font-weight: 700;
         }
 
         .page-header h1 {
+
             font-family: "Playfair Display", serif;
 
-            font-size: clamp(52px, 8vw, 86px);
+            font-size: clamp(50px, 8vw, 80px);
 
-            line-height: 1;
+            line-height: 1.05;
 
-            font-weight: 600;
+            margin-top: 18px;
 
-            letter-spacing: -2.5px;
-
-            margin-bottom: 25px;
+            margin-bottom: 22px;
         }
 
-        .page-introduction {
-            max-width: 690px;
+        .page-header p {
 
-            color: #99958c;
+            max-width: 650px;
+
+            color: #96928a;
 
             font-size: 17px;
-
-            line-height: 1.8;
         }
 
 
-        /* =====================================================
-           ARTICLES
-        ===================================================== */
+        /* ARTICLES */
 
-        .articles-section {
-            padding: 80px 0 120px;
+        .articles {
+
+            padding: 20px 0 120px;
+
+            background: #11110f;
         }
 
-        .article-list {
-            border-top: 1px solid #383631;
-        }
+        .article-grid {
 
-        .article {
             display: grid;
 
-            grid-template-columns: 280px 1fr;
+            grid-template-columns: repeat(2, 1fr);
 
-            gap: 38px;
+            gap: 28px;
+        }
 
-            padding: 35px 0;
+        .article-card {
 
-            border-bottom: 1px solid #383631;
+            overflow: hidden;
+
+            background: #191917;
+
+            border: 1px solid #2c2b27;
+
+            transition: 0.25s;
+        }
+
+        .article-card:hover {
+
+            transform: translateY(-5px);
+
+            border-color: #5c5547;
         }
 
         .article-image {
-            width: 100%;
 
-            height: 185px;
+            height: 250px;
 
-            object-fit: cover;
+            background-size: cover;
 
-            display: block;
+            background-position: center;
+        }
 
-            background: #20201d;
+        .image-automation {
+
+            background-image:
+
+                linear-gradient(
+                    rgba(0,0,0,0.12),
+                    rgba(0,0,0,0.12)
+                ),
+
+                url("images/industrial-automation-career-2026.webp");
+        }
+
+        .image-embedded {
+
+            background-image:
+
+                linear-gradient(
+                    rgba(0,0,0,0.12),
+                    rgba(0,0,0,0.12)
+                ),
+
+                url("images/ai-embedded-systems-iot.webp");
         }
 
         .article-content {
-            display: flex;
 
-            flex-direction: column;
-
-            justify-content: center;
+            padding: 28px;
         }
 
         .article-category {
-            color: #c7a96b;
+
+            color: #c8a96b;
 
             font-size: 11px;
 
-            font-weight: 700;
-
             text-transform: uppercase;
 
-            letter-spacing: 1.6px;
+            letter-spacing: 1.5px;
 
-            margin-bottom: 10px;
-        }
-
-        .article-title {
-            font-family: "Playfair Display", serif;
-
-            font-size: clamp(27px, 3vw, 38px);
-
-            line-height: 1.22;
-
-            font-weight: 600;
+            font-weight: 700;
 
             margin-bottom: 13px;
-
-            transition: 0.2s;
         }
 
-        .article:hover .article-title {
-            color: #d2b97f;
+        .article-card h2 {
+
+            font-family: "Playfair Display", serif;
+
+            font-size: 28px;
+
+            line-height: 1.25;
+
+            margin-bottom: 14px;
         }
 
-        .article-description {
-            color: #96928a;
+        .article-card p {
+
+            color: #97938a;
 
             font-size: 14px;
 
-            line-height: 1.75;
-
-            max-width: 680px;
-
-            margin-bottom: 18px;
-        }
-
-        .article-meta {
-            display: flex;
-
-            align-items: center;
-
-            gap: 20px;
-
-            flex-wrap: wrap;
-        }
-
-        .article-date {
-            color: #77736b;
-
-            font-size: 12px;
+            margin-bottom: 22px;
         }
 
         .read-link {
+
             color: #d0b579;
 
             font-size: 13px;
@@ -339,67 +291,11 @@
             font-weight: 700;
         }
 
-        .read-link:hover {
-            color: #ffffff;
-        }
 
-
-        /* =====================================================
-           WRITING NOTE
-        ===================================================== */
-
-        .writing-note {
-            margin-top: 75px;
-
-            padding: 50px 35px;
-
-            background: #191917;
-
-            border: 1px solid #2d2c28;
-
-            text-align: center;
-        }
-
-        .writing-note-label {
-            color: #c7a96b;
-
-            font-size: 11px;
-
-            text-transform: uppercase;
-
-            letter-spacing: 2px;
-
-            font-weight: 700;
-
-            margin-bottom: 15px;
-        }
-
-        .writing-note h2 {
-            font-family: "Playfair Display", serif;
-
-            font-size: clamp(30px, 4vw, 45px);
-
-            line-height: 1.2;
-
-            margin-bottom: 15px;
-        }
-
-        .writing-note p {
-            max-width: 620px;
-
-            margin: auto;
-
-            color: #8f8b83;
-
-            font-size: 14px;
-        }
-
-
-        /* =====================================================
-           FOOTER
-        ===================================================== */
+        /* FOOTER */
 
         footer {
+
             padding: 30px 0;
 
             background: #0c0c0b;
@@ -410,6 +306,7 @@
         }
 
         .footer-inner {
+
             display: flex;
 
             justify-content: space-between;
@@ -418,42 +315,26 @@
         }
 
 
-        /* =====================================================
-           MOBILE
-        ===================================================== */
+        /* MOBILE */
 
-        @media (max-width: 750px) {
+        @media (max-width: 800px) {
 
-            .article {
+            .nav-links {
+                display: none;
+            }
+
+            .article-grid {
                 grid-template-columns: 1fr;
-
-                gap: 22px;
-
-                padding: 30px 0;
-            }
-
-            .article-image {
-                height: 220px;
-            }
-
-            .article-title {
-                font-size: 28px;
             }
 
             .page-header {
-                padding: 80px 0 60px;
-            }
-
-            .writing-note {
-                padding: 38px 24px;
+                padding: 90px 0 60px;
             }
 
             .footer-inner {
                 flex-direction: column;
             }
-
         }
-
 
         @media (max-width: 500px) {
 
@@ -461,24 +342,13 @@
                 width: 88%;
             }
 
-            .page-header h1 {
-                font-size: 54px;
-
-                letter-spacing: -1.5px;
-            }
-
-            .page-introduction {
-                font-size: 15px;
-            }
-
             .article-image {
                 height: 205px;
             }
 
-            .article-title {
+            .article-card h2 {
                 font-size: 25px;
             }
-
         }
 
     </style>
@@ -489,56 +359,67 @@
 <body>
 
 
-<!-- ==========================================================
-     NAVIGATION
-=========================================================== -->
+<!-- NAVIGATION -->
 
 <nav class="navbar">
 
     <div class="container nav-inner">
 
-        <a
-            href="index.html"
-            class="brand"
-        >
+        <a href="index.html" class="brand">
             Charan<span>.</span>
         </a>
 
-        <a
-            href="index.html"
-            class="back-link"
-        >
-            ← Back to Home
-        </a>
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html#articles">
+                    Articles
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html#topics">
+                    Topics
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html#about">
+                    About
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html#contact">
+                    Contact
+                </a>
+            </li>
+
+        </ul>
 
     </div>
 
 </nav>
 
 
-<!-- ==========================================================
-     HEADER
-=========================================================== -->
+<!-- PAGE HEADER -->
 
 <header class="page-header">
 
     <div class="container">
 
-        <div class="eyebrow">
-            Technology Writing
+        <div class="small-title">
+            Writing
         </div>
 
         <h1>
-            All Articles
+            All Articles.
         </h1>
 
-        <p class="page-introduction">
-
-            A collection of my writing as I learn, research
-            and explore electronics, industrial automation,
-            artificial intelligence, embedded systems and
-            emerging technologies.
-
+        <p>
+            A collection of my writing on technology,
+            automation, artificial intelligence, electronics
+            and other emerging technologies.
         </p>
 
     </div>
@@ -546,29 +427,20 @@
 </header>
 
 
-<!-- ==========================================================
-     ARTICLE LIST
-=========================================================== -->
+<!-- ARTICLES -->
 
-<section class="articles-section">
+<section class="articles">
 
     <div class="container">
 
-        <div class="article-list">
+        <div class="article-grid">
 
 
-            <!-- =================================================
-                 ARTICLE 01
-            ================================================== -->
+            <!-- ARTICLE 1 -->
 
-            <article class="article">
+            <article class="article-card">
 
-                <img
-                    src="images/industrial-automation-career-2026.webp"
-                    alt="How to Start a Career in Industrial Automation in 2026"
-                    class="article-image"
-                >
-
+                <div class="article-image image-automation"></div>
 
                 <div class="article-content">
 
@@ -576,119 +448,66 @@
                         Industrial Automation
                     </div>
 
-                    <h2 class="article-title">
-                        How to Start a Career in Industrial Automation
-                        in 2026 (Complete Beginner Roadmap)
+                    <h2>
+                        How to Start a Career in Industrial
+                        Automation in 2026 (Complete Beginner Roadmap)
                     </h2>
 
-                    <p class="article-description">
-
-                        A practical beginner roadmap covering
-                        industrial automation fundamentals,
-                        technologies, skills and career opportunities.
-
+                    <p>
+                        A beginner-friendly guide to understanding
+                        industrial automation, the skills involved,
+                        career paths and where to start.
                     </p>
 
-                    <div class="article-meta">
-
-                        <span class="article-date">
-                            2026
-                        </span>
-
-                        <a
-                            href="https://medium.com/@charan.content/how-to-start-a-career-in-industrial-automation-in-2026-complete-beginner-roadmap-9807ed8151fd"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="read-link"
-                        >
-                            Read on Medium →
-                        </a>
-
-                    </div>
+                    <a
+                        href="https://medium.com/@charan.content/how-to-start-a-career-in-industrial-automation-in-2026-complete-beginner-roadmap-9807ed8151fd"
+                        target="_blank"
+                        rel="noopener"
+                        class="read-link">
+                        Read on Medium →
+                    </a>
 
                 </div>
 
             </article>
 
 
-            <!-- =================================================
-                 ARTICLE 02
-            ================================================== -->
+            <!-- ARTICLE 2 -->
 
-            <article class="article">
+            <article class="article-card">
 
-                <img
-                    src="images/ai-embedded-systems-iot.webp"
-                    alt="AI and Embedded Systems: The Future of Smart Electronics and IoT"
-                    class="article-image"
-                >
-
+                <div class="article-image image-embedded"></div>
 
                 <div class="article-content">
 
                     <div class="article-category">
-                        AI · Embedded Systems · IoT
+                        AI & Embedded Systems
                     </div>
 
-                    <h2 class="article-title">
-                        AI + Embedded Systems: The Future of Smart
-                        Electronics and IoT
+                    <h2>
+                        AI + Embedded Systems: The Future
+                        of Smart Electronics and IoT
                     </h2>
 
-                    <p class="article-description">
-
+                    <p>
                         Exploring how artificial intelligence,
-                        embedded systems and IoT are coming together
-                        to create smarter connected electronics.
-
+                        embedded systems and connected devices
+                        are coming together to create smarter
+                        electronics and connected systems.
                     </p>
 
-                    <div class="article-meta">
-
-                        <span class="article-date">
-                            2026
-                        </span>
-
-                        <a
-                            href="https://medium.com/@charan.content/ai-embedded-systems-the-future-of-smart-electronics-and-iot-58d7f9921d0e"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="read-link"
-                        >
-                            Read on Medium →
-                        </a>
-
-                    </div>
+                    <a
+                        href="https://medium.com/@charan.content/ai-embedded-systems-the-future-of-smart-electronics-and-iot-58d7f9921d0e"
+                        target="_blank"
+                        rel="noopener"
+                        class="read-link">
+                        Read on Medium →
+                    </a>
 
                 </div>
 
             </article>
 
-
-        </div>
-
-
-        <!-- =====================================================
-             MORE ARTICLES
-        ====================================================== -->
-
-        <div class="writing-note">
-
-            <div class="writing-note-label">
-                More to come
-            </div>
-
-            <h2>
-                More ideas are<br>
-                being explored.
-            </h2>
-
-            <p>
-
-                New articles will appear here as I continue
-                learning, researching and writing about technology.
-
-            </p>
 
         </div>
 
@@ -697,9 +516,7 @@
 </section>
 
 
-<!-- ==========================================================
-     FOOTER
-=========================================================== -->
+<!-- FOOTER -->
 
 <footer>
 
@@ -710,7 +527,7 @@
         </div>
 
         <div>
-            Technology Writer · Electronics · Automation · AI
+            Technology Writer · Automation · AI · Electronics
         </div>
 
     </div>
