@@ -5,55 +5,39 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>
-        Charan Teja | Technology Writer
-    </title>
+    <title>Charan Teja | Technology Writer</title>
 
     <meta name="description"
-          content="Charan Teja is a technology writer exploring emerging technologies across automation, AI, electronics, embedded systems and automotive technology.">
+        content="Charan Teja is a technology writer exploring emerging technologies across automation, AI, electronics, embedded systems and automotive technology.">
 
-    <meta name="keywords"
-          content="Charan Teja, technology writer, automation, artificial intelligence, AI, electronics, embedded systems, automotive technology, emerging technologies">
+    <meta name="author" content="Charan Teja">
 
-    <meta name="author"
-          content="Charan Teja">
+    <meta name="robots" content="index, follow">
 
-    <meta name="robots"
-          content="index, follow">
-
-    <meta name="theme-color"
-          content="#11110f">
-
+    <link rel="canonical" href="https://charan-exe.github.io/">
 
     <!-- Open Graph -->
 
-    <meta property="og:title"
-          content="Charan Teja | Technology Writer">
+    <meta property="og:title" content="Charan Teja | Technology Writer">
 
     <meta property="og:description"
-          content="Writing about emerging technologies, automation, AI and electronics.">
+        content="Writing about emerging technologies, automation, AI and electronics.">
 
-    <meta property="og:type"
-          content="website">
+    <meta property="og:type" content="website">
 
-    <meta property="og:url"
-          content="https://charan-exe.github.io/">
-
+    <meta property="og:url" content="https://charan-exe.github.io/">
 
     <!-- Fonts -->
 
-    <link rel="preconnect"
-          href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-    <link rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
-          rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
 
 
     <style>
@@ -84,11 +68,6 @@
             color: inherit;
         }
 
-        img {
-            max-width: 100%;
-            display: block;
-        }
-
         .container {
             width: min(1120px, 90%);
             margin: auto;
@@ -104,7 +83,7 @@
             top: 0;
             z-index: 1000;
 
-            background: rgba(17, 17, 15, 0.94);
+            background: rgba(17, 17, 15, 0.95);
 
             border-bottom: 1px solid #292824;
 
@@ -121,8 +100,7 @@
 
         .brand {
             font-family: "Playfair Display", serif;
-
-            font-size: 23px;
+            font-size: 24px;
             font-weight: 600;
         }
 
@@ -137,6 +115,7 @@
             list-style: none;
 
             font-size: 14px;
+
             color: #bdb8ad;
         }
 
@@ -154,38 +133,37 @@
         ===================================================== */
 
         .hero {
-
             min-height: 720px;
 
             display: flex;
             align-items: center;
 
             position: relative;
-
             overflow: hidden;
 
             background-image:
 
                 linear-gradient(
                     90deg,
-                    rgba(17,17,15,0.97) 0%,
-                    rgba(17,17,15,0.86) 43%,
-                    rgba(17,17,15,0.48) 100%
+                    rgba(17, 17, 15, 0.98) 0%,
+                    rgba(17, 17, 15, 0.90) 42%,
+                    rgba(17, 17, 15, 0.55) 100%
                 ),
 
                 url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1800&q=85");
 
             background-size: cover;
+
             background-position: center;
         }
 
         .hero-content {
-            max-width: 760px;
+            max-width: 780px;
+
             padding: 100px 0;
         }
 
         .eyebrow {
-
             display: inline-block;
 
             margin-bottom: 24px;
@@ -206,12 +184,11 @@
         }
 
         .hero h1 {
-
             font-family: "Playfair Display", serif;
 
-            font-size: clamp(50px, 8vw, 88px);
+            font-size: clamp(55px, 9vw, 92px);
 
-            line-height: 1.03;
+            line-height: 1.02;
 
             font-weight: 600;
 
@@ -225,8 +202,7 @@
         }
 
         .hero-subtitle {
-
-            font-size: clamp(20px, 3vw, 28px);
+            font-size: clamp(20px, 3vw, 27px);
 
             color: #d4d0c7;
 
@@ -236,8 +212,7 @@
         }
 
         .hero-description {
-
-            max-width: 650px;
+            max-width: 670px;
 
             color: #aaa69e;
 
@@ -247,7 +222,6 @@
         }
 
         .hero-buttons {
-
             display: flex;
 
             flex-wrap: wrap;
@@ -256,7 +230,6 @@
         }
 
         .button {
-
             display: inline-block;
 
             padding: 12px 20px;
@@ -273,7 +246,6 @@
         }
 
         .button-primary {
-
             background: #c8a96b;
 
             color: #171510;
@@ -282,7 +254,6 @@
         }
 
         .button:hover {
-
             transform: translateY(-2px);
 
             border-color: #c8a96b;
@@ -290,11 +261,10 @@
 
 
         /* =====================================================
-           INTRO
+           INTRODUCTION
         ===================================================== */
 
         .intro {
-
             padding: 110px 0;
 
             background: #f1eee7;
@@ -303,7 +273,6 @@
         }
 
         .intro-grid {
-
             display: grid;
 
             grid-template-columns: 0.8fr 1.2fr;
@@ -314,7 +283,6 @@
         }
 
         .small-title {
-
             color: #8b7041;
 
             font-size: 12px;
@@ -324,10 +292,11 @@
             letter-spacing: 2px;
 
             font-weight: 700;
+
+            margin-bottom: 10px;
         }
 
         .intro h2 {
-
             font-family: "Playfair Display", serif;
 
             font-size: clamp(35px, 5vw, 55px);
@@ -338,31 +307,31 @@
         }
 
         .intro-text {
-
             font-size: 18px;
 
             color: #5c5952;
         }
 
         .intro-text p + p {
-
             margin-top: 18px;
         }
 
 
         /* =====================================================
-           ARTICLES
+           GENERAL ARTICLE SECTIONS
         ===================================================== */
 
         .articles {
-
             padding: 110px 0;
 
             background: #11110f;
         }
 
-        .section-header {
+        .latest-section {
+            border-top: 1px solid #292824;
+        }
 
+        .section-header {
             display: flex;
 
             justify-content: space-between;
@@ -375,7 +344,6 @@
         }
 
         .section-header h2 {
-
             font-family: "Playfair Display", serif;
 
             font-size: clamp(38px, 5vw, 58px);
@@ -384,7 +352,6 @@
         }
 
         .section-description {
-
             max-width: 430px;
 
             color: #949087;
@@ -392,8 +359,12 @@
             font-size: 14px;
         }
 
-        .article-grid {
 
+        /* =====================================================
+           ARTICLE CARDS
+        ===================================================== */
+
+        .article-grid {
             display: grid;
 
             grid-template-columns: repeat(2, 1fr);
@@ -402,7 +373,6 @@
         }
 
         .article-card {
-
             overflow: hidden;
 
             background: #191917;
@@ -413,14 +383,12 @@
         }
 
         .article-card:hover {
-
             transform: translateY(-5px);
 
             border-color: #5c5547;
         }
 
         .article-image {
-
             height: 230px;
 
             background-size: cover;
@@ -428,53 +396,51 @@
             background-position: center;
         }
 
+
+        /* Technology images */
+
         .image-automation {
-
-            background-image:
-                linear-gradient(
-                    rgba(0,0,0,0.18),
-                    rgba(0,0,0,0.18)
-                ),
-                url("https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80");
-        }
-
-        .image-embedded {
-
             background-image:
                 linear-gradient(
                     rgba(0,0,0,0.15),
                     rgba(0,0,0,0.15)
                 ),
-                url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80");
+                url("https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=85");
         }
 
         .image-ai {
-
             background-image:
                 linear-gradient(
-                    rgba(0,0,0,0.18),
-                    rgba(0,0,0,0.18)
+                    rgba(0,0,0,0.15),
+                    rgba(0,0,0,0.15)
                 ),
-                url("https://images.unsplash.com/photo-1555255707-c07966088b7b?auto=format&fit=crop&w=1200&q=80");
+                url("https://images.unsplash.com/photo-1555255707-c07966088b7b?auto=format&fit=crop&w=1200&q=85");
+        }
+
+        .image-electronics {
+            background-image:
+                linear-gradient(
+                    rgba(0,0,0,0.15),
+                    rgba(0,0,0,0.15)
+                ),
+                url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=85");
         }
 
         .image-automotive {
-
             background-image:
                 linear-gradient(
-                    rgba(0,0,0,0.18),
-                    rgba(0,0,0,0.18)
+                    rgba(0,0,0,0.15),
+                    rgba(0,0,0,0.15)
                 ),
-                url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1200&q=80");
+                url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1200&q=85");
         }
 
-        .article-content {
 
+        .article-content {
             padding: 27px;
         }
 
         .article-category {
-
             color: #c8a96b;
 
             font-size: 11px;
@@ -489,7 +455,6 @@
         }
 
         .article-card h3 {
-
             font-family: "Playfair Display", serif;
 
             font-size: 25px;
@@ -500,7 +465,6 @@
         }
 
         .article-card p {
-
             color: #97938a;
 
             font-size: 14px;
@@ -509,7 +473,6 @@
         }
 
         .read-link {
-
             color: #d0b579;
 
             font-size: 13px;
@@ -519,11 +482,51 @@
 
 
         /* =====================================================
+           VIEW ALL ARTICLES BUTTON
+        ===================================================== */
+
+        .view-all-container {
+            display: flex;
+
+            justify-content: center;
+
+            margin-top: 45px;
+        }
+
+        .view-all-button {
+            display: inline-block;
+
+            padding: 14px 26px;
+
+            border: 1px solid #47443d;
+
+            border-radius: 5px;
+
+            color: #eeeae1;
+
+            font-size: 13px;
+
+            font-weight: 700;
+
+            transition: 0.25s;
+        }
+
+        .view-all-button:hover {
+            background: #c8a96b;
+
+            border-color: #c8a96b;
+
+            color: #171510;
+
+            transform: translateY(-2px);
+        }
+
+
+        /* =====================================================
            TOPICS
         ===================================================== */
 
         .topics {
-
             padding: 105px 0;
 
             background: #ebe8e0;
@@ -532,7 +535,6 @@
         }
 
         .topics h2 {
-
             font-family: "Playfair Display", serif;
 
             font-size: clamp(38px, 5vw, 55px);
@@ -541,7 +543,6 @@
         }
 
         .topic-grid {
-
             display: grid;
 
             grid-template-columns: repeat(5, 1fr);
@@ -552,7 +553,6 @@
         }
 
         .topic {
-
             min-height: 145px;
 
             padding: 25px;
@@ -573,9 +573,7 @@
         }
 
         .topic:hover {
-
             background: #dedbd2;
-
         }
 
 
@@ -584,14 +582,12 @@
         ===================================================== */
 
         .philosophy {
-
             padding: 120px 0;
 
             background: #11110f;
         }
 
         .philosophy-inner {
-
             max-width: 850px;
 
             margin: auto;
@@ -600,7 +596,6 @@
         }
 
         .quote-mark {
-
             color: #c8a96b;
 
             font-family: Georgia, serif;
@@ -613,7 +608,6 @@
         }
 
         .philosophy blockquote {
-
             font-family: "Playfair Display", serif;
 
             font-size: clamp(30px, 5vw, 52px);
@@ -624,7 +618,6 @@
         }
 
         .philosophy-caption {
-
             margin-top: 25px;
 
             color: #858078;
@@ -638,7 +631,6 @@
         ===================================================== */
 
         .about {
-
             padding: 110px 0;
 
             background: #f1eee7;
@@ -647,7 +639,6 @@
         }
 
         .about-grid {
-
             display: grid;
 
             grid-template-columns: 1fr 1fr;
@@ -656,7 +647,6 @@
         }
 
         .about h2 {
-
             font-family: "Playfair Display", serif;
 
             font-size: clamp(38px, 5vw, 55px);
@@ -665,14 +655,12 @@
         }
 
         .about-text {
-
             color: #5d5952;
 
             font-size: 16px;
         }
 
         .about-text p + p {
-
             margin-top: 20px;
         }
 
@@ -682,7 +670,6 @@
         ===================================================== */
 
         .contact {
-
             padding: 110px 0;
 
             background: #181815;
@@ -691,7 +678,6 @@
         }
 
         .contact h2 {
-
             font-family: "Playfair Display", serif;
 
             font-size: clamp(40px, 6vw, 65px);
@@ -700,7 +686,6 @@
         }
 
         .contact p {
-
             color: #929087;
 
             max-width: 600px;
@@ -709,7 +694,6 @@
         }
 
         .contact-links {
-
             display: flex;
 
             justify-content: center;
@@ -725,7 +709,6 @@
         ===================================================== */
 
         footer {
-
             padding: 30px 0;
 
             background: #0c0c0b;
@@ -736,7 +719,6 @@
         }
 
         .footer-inner {
-
             display: flex;
 
             justify-content: space-between;
@@ -770,6 +752,7 @@
             .intro-grid,
             .about-grid {
                 grid-template-columns: 1fr;
+
                 gap: 35px;
             }
 
@@ -849,8 +832,14 @@
         <ul class="nav-links">
 
             <li>
-                <a href="#articles">
-                    Articles
+                <a href="#trending">
+                    Trending
+                </a>
+            </li>
+
+            <li>
+                <a href="#latest">
+                    Latest
                 </a>
             </li>
 
@@ -877,7 +866,6 @@
     </div>
 
 </nav>
-
 
 
 <!-- ==========================================================
@@ -916,7 +904,7 @@
             <div class="hero-buttons">
 
                 <a
-                    href="#articles"
+                    href="#latest"
                     class="button button-primary">
                     Explore My Writing
                 </a>
@@ -924,6 +912,7 @@
                 <a
                     href="https://medium.com/@charan.content"
                     target="_blank"
+                    rel="noopener noreferrer"
                     class="button">
                     Medium
                 </a>
@@ -931,6 +920,7 @@
                 <a
                     href="https://www.linkedin.com/in/charan-writes"
                     target="_blank"
+                    rel="noopener noreferrer"
                     class="button">
                     LinkedIn
                 </a>
@@ -944,9 +934,8 @@
 </header>
 
 
-
 <!-- ==========================================================
-     INTRO
+     INTRODUCTION
 =========================================================== -->
 
 <section class="intro">
@@ -988,12 +977,13 @@
 </section>
 
 
-
 <!-- ==========================================================
-     ARTICLES
+     TRENDING ARTICLES
+     SHOW 3–4 SELECTED ARTICLES
+     NO VIEW ALL BUTTON HERE
 =========================================================== -->
 
-<section class="articles" id="articles">
+<section class="articles" id="trending">
 
     <div class="container">
 
@@ -1002,31 +992,29 @@
             <div>
 
                 <div class="small-title">
-                    Selected Writing
+                    Featured Writing
                 </div>
 
                 <h2>
-                    Latest Articles
+                    Trending Articles
                 </h2>
 
             </div>
 
             <p class="section-description">
 
-                Practical explanations, career guides and
-                technology insights based on what I'm
-                learning and researching.
+                A selection of topics I'm currently exploring,
+                researching and writing about.
 
             </p>
 
         </div>
 
 
-
         <div class="article-grid">
 
 
-            <!-- ARTICLE 1 -->
+            <!-- TRENDING ARTICLE 1 -->
 
             <article class="article-card">
 
@@ -1044,16 +1032,18 @@
                     </h3>
 
                     <p>
-                        A beginner-friendly roadmap for
-                        understanding industrial automation,
-                        the skills involved and where to begin.
+                        A beginner-friendly roadmap for understanding
+                        industrial automation and its career opportunities.
                     </p>
 
                     <a
-                        href="https://medium.com/@charan.content"
+                        href="YOUR-MEDIUM-ARTICLE-LINK"
                         target="_blank"
+                        rel="noopener noreferrer"
                         class="read-link">
+
                         Read on Medium →
+
                     </a>
 
                 </div>
@@ -1061,44 +1051,7 @@
             </article>
 
 
-
-            <!-- ARTICLE 2 -->
-
-            <article class="article-card">
-
-                <div class="article-image image-embedded"></div>
-
-                <div class="article-content">
-
-                    <div class="article-category">
-                        Electronics
-                    </div>
-
-                    <h3>
-                        AI + Embedded Systems: The Future
-                        of Smart Electronics and IoT
-                    </h3>
-
-                    <p>
-                        Exploring how artificial intelligence,
-                        embedded systems and connected devices
-                        are coming together.
-                    </p>
-
-                    <a
-                        href="https://medium.com/@charan.content"
-                        target="_blank"
-                        class="read-link">
-                        Read on Medium →
-                    </a>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- ARTICLE 3 -->
+            <!-- TRENDING ARTICLE 2 -->
 
             <article class="article-card">
 
@@ -1107,24 +1060,25 @@
                 <div class="article-content">
 
                     <div class="article-category">
-                        Emerging Technology
+                        Artificial Intelligence
                     </div>
 
                     <h3>
-                        More Technology Writing
+                        YOUR TRENDING ARTICLE TITLE
                     </h3>
 
                     <p>
-                        Articles exploring AI, automation,
-                        electronics and technologies shaping
-                        the next generation of engineering.
+                        YOUR SHORT ARTICLE DESCRIPTION
                     </p>
 
                     <a
-                        href="https://medium.com/@charan.content"
+                        href="YOUR-MEDIUM-ARTICLE-LINK"
                         target="_blank"
+                        rel="noopener noreferrer"
                         class="read-link">
-                        View Medium →
+
+                        Read on Medium →
+
                     </a>
 
                 </div>
@@ -1132,8 +1086,42 @@
             </article>
 
 
+            <!-- TRENDING ARTICLE 3 -->
 
-            <!-- ARTICLE 4 -->
+            <article class="article-card">
+
+                <div class="article-image image-electronics"></div>
+
+                <div class="article-content">
+
+                    <div class="article-category">
+                        Electronics
+                    </div>
+
+                    <h3>
+                        YOUR TRENDING ARTICLE TITLE
+                    </h3>
+
+                    <p>
+                        YOUR SHORT ARTICLE DESCRIPTION
+                    </p>
+
+                    <a
+                        href="YOUR-MEDIUM-ARTICLE-LINK"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="read-link">
+
+                        Read on Medium →
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- TRENDING ARTICLE 4 -->
 
             <article class="article-card">
 
@@ -1146,21 +1134,21 @@
                     </div>
 
                     <h3>
-                        Exploring the Future of Automotive
-                        Software and Embedded Technology
+                        YOUR TRENDING ARTICLE TITLE
                     </h3>
 
                     <p>
-                        Notes and articles about automotive
-                        electronics, embedded software and
-                        emerging vehicle technologies.
+                        YOUR SHORT ARTICLE DESCRIPTION
                     </p>
 
                     <a
-                        href="https://medium.com/@charan.content"
+                        href="YOUR-MEDIUM-ARTICLE-LINK"
                         target="_blank"
+                        rel="noopener noreferrer"
                         class="read-link">
-                        View Medium →
+
+                        Read on Medium →
+
                     </a>
 
                 </div>
@@ -1174,6 +1162,203 @@
 
 </section>
 
+
+<!-- ==========================================================
+     LATEST ARTICLES
+     SHOW 3–4 NEWEST ARTICLES
+     VIEW ALL BUTTON
+=========================================================== -->
+
+<section class="articles latest-section" id="latest">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div>
+
+                <div class="small-title">
+                    Fresh Writing
+                </div>
+
+                <h2>
+                    Latest Articles
+                </h2>
+
+            </div>
+
+            <p class="section-description">
+
+                The newest articles I've published on Medium.
+
+            </p>
+
+        </div>
+
+
+        <div class="article-grid">
+
+
+            <!-- LATEST ARTICLE 1 -->
+
+            <article class="article-card">
+
+                <div class="article-image image-automation"></div>
+
+                <div class="article-content">
+
+                    <div class="article-category">
+                        YOUR CATEGORY
+                    </div>
+
+                    <h3>
+                        YOUR LATEST ARTICLE TITLE
+                    </h3>
+
+                    <p>
+                        YOUR SHORT ARTICLE DESCRIPTION
+                    </p>
+
+                    <a
+                        href="YOUR-MEDIUM-ARTICLE-LINK"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="read-link">
+
+                        Read on Medium →
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- LATEST ARTICLE 2 -->
+
+            <article class="article-card">
+
+                <div class="article-image image-ai"></div>
+
+                <div class="article-content">
+
+                    <div class="article-category">
+                        YOUR CATEGORY
+                    </div>
+
+                    <h3>
+                        YOUR LATEST ARTICLE TITLE
+                    </h3>
+
+                    <p>
+                        YOUR SHORT ARTICLE DESCRIPTION
+                    </p>
+
+                    <a
+                        href="YOUR-MEDIUM-ARTICLE-LINK"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="read-link">
+
+                        Read on Medium →
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- LATEST ARTICLE 3 -->
+
+            <article class="article-card">
+
+                <div class="article-image image-electronics"></div>
+
+                <div class="article-content">
+
+                    <div class="article-category">
+                        YOUR CATEGORY
+                    </div>
+
+                    <h3>
+                        YOUR LATEST ARTICLE TITLE
+                    </h3>
+
+                    <p>
+                        YOUR SHORT ARTICLE DESCRIPTION
+                    </p>
+
+                    <a
+                        href="YOUR-MEDIUM-ARTICLE-LINK"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="read-link">
+
+                        Read on Medium →
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- LATEST ARTICLE 4 -->
+
+            <article class="article-card">
+
+                <div class="article-image image-automotive"></div>
+
+                <div class="article-content">
+
+                    <div class="article-category">
+                        YOUR CATEGORY
+                    </div>
+
+                    <h3>
+                        YOUR LATEST ARTICLE TITLE
+                    </h3>
+
+                    <p>
+                        YOUR SHORT ARTICLE DESCRIPTION
+                    </p>
+
+                    <a
+                        href="YOUR-MEDIUM-ARTICLE-LINK"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="read-link">
+
+                        Read on Medium →
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+
+        <!-- VIEW ALL -->
+
+        <div class="view-all-container">
+
+            <a
+                href="articles.html"
+                class="view-all-button">
+
+                View All Articles →
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
 
 
 <!-- ==========================================================
@@ -1222,7 +1407,6 @@
 </section>
 
 
-
 <!-- ==========================================================
      WRITING PHILOSOPHY
 =========================================================== -->
@@ -1255,7 +1439,6 @@
     </div>
 
 </section>
-
 
 
 <!-- ==========================================================
@@ -1313,7 +1496,6 @@
 </section>
 
 
-
 <!-- ==========================================================
      CONTACT
 =========================================================== -->
@@ -1344,21 +1526,29 @@
             <a
                 href="https://medium.com/@charan.content"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="button button-primary">
+
                 Medium
+
             </a>
 
             <a
                 href="https://www.linkedin.com/in/charan-writes"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="button">
+
                 LinkedIn
+
             </a>
 
             <a
                 href="mailto:charan.content@gmail.com"
                 class="button">
+
                 Email Me
+
             </a>
 
         </div>
@@ -1366,7 +1556,6 @@
     </div>
 
 </section>
-
 
 
 <!-- ==========================================================
@@ -1392,4 +1581,4 @@
 
 </body>
 
-</html>
+    </html>
