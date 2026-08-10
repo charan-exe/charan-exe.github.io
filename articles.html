@@ -7,29 +7,75 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>All Articles | Charan Teja</title>
+    <title>All Articles | Charan Teja — Technology Writer</title>
 
-    <meta name="description"
-        content="Explore all technology articles written by Charan Teja covering automation, AI, electronics, embedded systems, automotive technology and emerging technologies.">
+    <meta
+        name="description"
+        content="Explore articles by Charan Teja on electronics, industrial automation, artificial intelligence, embedded systems and emerging technologies."
+    >
+
+    <meta
+        name="keywords"
+        content="Charan Teja, technology writer, electronics articles, industrial automation, artificial intelligence, embedded systems, technology blogs"
+    >
 
     <meta name="author" content="Charan Teja">
 
     <meta name="robots" content="index, follow">
 
-    <link rel="canonical" href="https://charan-exe.github.io/articles.html">
+    <link
+        rel="canonical"
+        href="https://charan-exe.github.io/articles.html"
+    >
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-    <link rel="preconnect"
+    <!-- Open Graph -->
+
+    <meta
+        property="og:title"
+        content="All Articles | Charan Teja"
+    >
+
+    <meta
+        property="og:description"
+        content="Technology writing covering electronics, automation, AI and emerging technologies."
+    >
+
+    <meta
+        property="og:type"
+        content="website"
+    >
+
+    <meta
+        property="og:url"
+        content="https://charan-exe.github.io/articles.html"
+    >
+
+
+    <!-- Fonts -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
         href="https://fonts.gstatic.com"
-        crossorigin>
+        crossorigin
+    >
 
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
-        rel="stylesheet">
+        rel="stylesheet"
+    >
 
 
     <style>
+
+        /* =====================================================
+           GLOBAL
+        ===================================================== */
 
         * {
             margin: 0;
@@ -43,40 +89,60 @@
 
         body {
             background: #11110f;
+
             color: #eeeae1;
+
             font-family: "DM Sans", sans-serif;
-            line-height: 1.6;
+
+            line-height: 1.7;
         }
 
         a {
             color: inherit;
+
             text-decoration: none;
         }
 
         .container {
-            width: min(1050px, 90%);
+            width: min(1080px, 90%);
+
             margin: auto;
         }
 
 
-        /* NAVIGATION */
+        /* =====================================================
+           NAVIGATION
+        ===================================================== */
 
-        nav {
+        .navbar {
+            position: sticky;
+
+            top: 0;
+
+            z-index: 1000;
+
+            background: rgba(17, 17, 15, 0.96);
+
             border-bottom: 1px solid #292824;
-            background: #11110f;
+
+            backdrop-filter: blur(12px);
         }
 
         .nav-inner {
             min-height: 72px;
 
             display: flex;
+
             align-items: center;
+
             justify-content: space-between;
         }
 
         .brand {
             font-family: "Playfair Display", serif;
+
             font-size: 24px;
+
             font-weight: 600;
         }
 
@@ -84,173 +150,331 @@
             color: #c8a96b;
         }
 
-        .back {
+        .back-link {
             color: #aaa69e;
+
             font-size: 14px;
+
+            transition: 0.2s;
         }
 
-        .back:hover {
-            color: #c8a96b;
+        .back-link:hover {
+            color: #ffffff;
         }
 
 
-        /* HEADER */
+        /* =====================================================
+           PAGE INTRO
+        ===================================================== */
 
         .page-header {
-            padding: 100px 0 70px;
+            padding: 105px 0 75px;
+
+            border-bottom: 1px solid #292824;
         }
 
-        .label {
+        .eyebrow {
             color: #c8a96b;
-
-            text-transform: uppercase;
-
-            letter-spacing: 2px;
 
             font-size: 12px;
 
             font-weight: 700;
 
-            margin-bottom: 15px;
+            text-transform: uppercase;
+
+            letter-spacing: 2px;
+
+            margin-bottom: 18px;
         }
 
-        h1 {
+        .page-header h1 {
             font-family: "Playfair Display", serif;
 
-            font-size: clamp(45px, 7vw, 75px);
+            font-size: clamp(50px, 8vw, 82px);
 
-            line-height: 1.05;
+            line-height: 1.03;
 
-            margin-bottom: 20px;
+            font-weight: 600;
+
+            letter-spacing: -2px;
+
+            margin-bottom: 25px;
         }
 
-        .intro {
-            max-width: 650px;
+        .page-introduction {
+            max-width: 680px;
 
-            color: #96928a;
+            color: #99958d;
 
             font-size: 17px;
+
+            line-height: 1.8;
         }
 
 
-        /* ARTICLE LIST */
+        /* =====================================================
+           ARTICLE LIST
+        ===================================================== */
 
-        .all-articles {
-            padding-bottom: 110px;
+        .articles-section {
+            padding: 80px 0 120px;
         }
 
         .article-list {
-            display: grid;
-
-            gap: 18px;
+            border-top: 1px solid #383631;
         }
+
+
+        /* =====================================================
+           ARTICLE
+        ===================================================== */
 
         .article {
-
             display: grid;
 
-            grid-template-columns: 190px 1fr;
+            grid-template-columns: 80px 1fr 160px;
 
-            gap: 28px;
+            gap: 30px;
 
-            padding: 25px;
+            padding: 38px 0;
 
-            background: #191917;
+            border-bottom: 1px solid #383631;
 
-            border: 1px solid #2c2b27;
-
-            transition: 0.2s;
+            transition: 0.25s;
         }
 
-        .article:hover {
-            border-color: #575145;
+        .article-number {
+            color: #817b70;
 
-            transform: translateY(-2px);
+            font-family: "Playfair Display", serif;
+
+            font-size: 15px;
+
+            padding-top: 6px;
         }
 
-        .article-image {
-            min-height: 145px;
-
-            background-size: cover;
-
-            background-position: center;
+        .article-main {
+            max-width: 720px;
         }
 
-        .automation {
-            background-image:
-                url("https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=85");
-        }
-
-        .ai {
-            background-image:
-                url("https://images.unsplash.com/photo-1555255707-c07966088b7b?auto=format&fit=crop&w=800&q=85");
-        }
-
-        .electronics {
-            background-image:
-                url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=85");
-        }
-
-        .automotive {
-            background-image:
-                url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=800&q=85");
-        }
-
-        .category {
+        .article-category {
             color: #c8a96b;
-
-            text-transform: uppercase;
-
-            letter-spacing: 1.5px;
 
             font-size: 11px;
 
             font-weight: 700;
 
-            margin-bottom: 10px;
+            text-transform: uppercase;
+
+            letter-spacing: 1.6px;
+
+            margin-bottom: 9px;
         }
 
-        h2 {
+        .article-title {
             font-family: "Playfair Display", serif;
 
-            font-size: 26px;
+            font-size: clamp(25px, 3vw, 34px);
 
             line-height: 1.25;
 
-            margin-bottom: 10px;
+            font-weight: 600;
+
+            margin-bottom: 12px;
+
+            transition: 0.2s;
         }
 
-        .description {
+        .article:hover .article-title {
+            color: #d2b97f;
+        }
+
+        .article-description {
             color: #96928a;
 
             font-size: 14px;
 
-            margin-bottom: 15px;
+            line-height: 1.75;
+
+            max-width: 650px;
         }
 
-        .read {
+        .article-meta {
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: flex-end;
+
+            justify-content: space-between;
+
+            text-align: right;
+        }
+
+        .article-date {
+            color: #77736b;
+
+            font-size: 12px;
+        }
+
+        .read-link {
             color: #d0b579;
 
             font-size: 13px;
 
             font-weight: 700;
+
+            white-space: nowrap;
+
+            transition: 0.2s;
+        }
+
+        .read-link:hover {
+            color: #ffffff;
         }
 
 
-        /* MOBILE */
+        /* =====================================================
+           WRITING NOTE
+        ===================================================== */
 
-        @media (max-width: 650px) {
+        .writing-note {
+            margin-top: 75px;
+
+            padding: 45px;
+
+            background: #191917;
+
+            border: 1px solid #2d2c28;
+
+            text-align: center;
+        }
+
+        .writing-note-label {
+            color: #c8a96b;
+
+            font-size: 11px;
+
+            text-transform: uppercase;
+
+            letter-spacing: 2px;
+
+            font-weight: 700;
+
+            margin-bottom: 15px;
+        }
+
+        .writing-note h2 {
+            font-family: "Playfair Display", serif;
+
+            font-size: clamp(30px, 4vw, 44px);
+
+            line-height: 1.2;
+
+            margin-bottom: 15px;
+        }
+
+        .writing-note p {
+            max-width: 620px;
+
+            margin: auto;
+
+            color: #8f8b83;
+
+            font-size: 14px;
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
+
+        footer {
+            padding: 30px 0;
+
+            background: #0c0c0b;
+
+            color: #77736b;
+
+            font-size: 12px;
+        }
+
+        .footer-inner {
+            display: flex;
+
+            justify-content: space-between;
+
+            gap: 20px;
+        }
+
+
+        /* =====================================================
+           MOBILE
+        ===================================================== */
+
+        @media (max-width: 750px) {
 
             .article {
-                grid-template-columns: 1fr;
+                grid-template-columns: 42px 1fr;
+
+                gap: 18px;
             }
 
-            .article-image {
-                min-height: 190px;
+            .article-meta {
+                grid-column: 2;
+
+                flex-direction: row;
+
+                align-items: center;
+
+                justify-content: space-between;
+
+                text-align: left;
+
+                margin-top: 12px;
+            }
+
+            .article-title {
+                font-size: 26px;
             }
 
             .page-header {
-                padding: 75px 0 50px;
+                padding: 80px 0 60px;
+            }
+
+            .writing-note {
+                padding: 35px 25px;
+            }
+
+            .footer-inner {
+                flex-direction: column;
+            }
+
+        }
+
+
+        @media (max-width: 500px) {
+
+            .container {
+                width: 88%;
+            }
+
+            .page-header h1 {
+                font-size: 52px;
+
+                letter-spacing: -1.5px;
+            }
+
+            .page-introduction {
+                font-size: 15px;
+            }
+
+            .article {
+                padding: 30px 0;
+            }
+
+            .article-title {
+                font-size: 23px;
             }
 
         }
@@ -263,15 +487,26 @@
 <body>
 
 
-<nav>
+<!-- ==========================================================
+     NAVIGATION
+=========================================================== -->
+
+<nav class="navbar">
 
     <div class="container nav-inner">
 
-        <a href="index.html" class="brand">
+        <a
+            href="index.html"
+            class="brand"
+        >
             Charan<span>.</span>
         </a>
 
-        <a href="index.html" class="back">
+
+        <a
+            href="index.html"
+            class="back-link"
+        >
             ← Back to Home
         </a>
 
@@ -280,23 +515,28 @@
 </nav>
 
 
+<!-- ==========================================================
+     PAGE HEADER
+=========================================================== -->
+
 <header class="page-header">
 
     <div class="container">
 
-        <div class="label">
-            Writing
+        <div class="eyebrow">
+            Technology Writing
         </div>
 
         <h1>
             All Articles
         </h1>
 
-        <p class="intro">
+        <p class="page-introduction">
 
-            A collection of my writing on automation,
-            artificial intelligence, electronics,
-            embedded systems and emerging technologies.
+            A collection of my writing as I learn, research
+            and explore electronics, automation, artificial
+            intelligence, embedded systems and emerging
+            technologies.
 
         </p>
 
@@ -305,101 +545,32 @@
 </header>
 
 
-<section class="all-articles">
+<!-- ==========================================================
+     ARTICLES
+=========================================================== -->
+
+<section class="articles-section">
 
     <div class="container">
 
         <div class="article-list">
 
 
-            <!-- ==================================================
-                 ADD NEW ARTICLES ABOVE THIS COMMENT
-            =================================================== -->
-
-
-            <!-- ARTICLE 1 -->
+            <!-- =================================================
+                 ARTICLE 01
+            ================================================== -->
 
             <article class="article">
 
-                <div class="article-image automation"></div>
+                <div class="article-number">
+                    01
+                </div>
 
-                <div>
 
-                    <div class="category">
+                <div class="article-main">
+
+                    <div class="article-category">
                         Industrial Automation
                     </div>
 
-                    <h2>
-                        How to Start a Career in Industrial Automation
-                        in 2026
-                    </h2>
-
-                    <p class="description">
-
-                        A beginner-friendly roadmap for understanding
-                        industrial automation and its career opportunities.
-
-                    </p>
-
-                    <a
-                        href="YOUR-MEDIUM-ARTICLE-LINK"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="read">
-
-                        Read on Medium →
-
-                    </a>
-
-                </div>
-
-            </article>
-
-
-            <!-- ARTICLE 2 -->
-
-            <article class="article">
-
-                <div class="article-image ai"></div>
-
-                <div>
-
-                    <div class="category">
-                        Artificial Intelligence
-                    </div>
-
-                    <h2>
-                        YOUR ARTICLE TITLE
-                    </h2>
-
-                    <p class="description">
-
-                        YOUR ARTICLE DESCRIPTION
-
-                    </p>
-
-                    <a
-                        href="YOUR-MEDIUM-ARTICLE-LINK"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="read">
-
-                        Read on Medium →
-
-                    </a>
-
-                </div>
-
-            </article>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-
-</body>
-
-</html>
+                    <h2 class="
